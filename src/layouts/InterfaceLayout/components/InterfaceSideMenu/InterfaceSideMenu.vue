@@ -1,11 +1,10 @@
 <template>
-  <div class="transactions-side-menu">
-    <div class="side-menu-header">
-      <img alt src="~@/assets/images/logo.png" />
-      <div @click="toggleSideMenu">
-        <i class="fa fa-lg fa-times"></i>
-      </div>
+  <div class="interface-side-menu">
+    <div class="text-uppercase sidemenu-toggle" @click="toggleSideMenu">
+      Actions Menu
+      <i class="fa fa-arrow-right" aria-hidden="true"></i>
     </div>
+
     <div class="side-menu">
       <ul>
         <li
