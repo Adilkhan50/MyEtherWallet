@@ -53,7 +53,7 @@
         <div
           :class="isSidemenuOpen && 'side-nav-open'"
           class="side-nav-background"
-          @click="toggleSideMenu;"
+          @click="toggleSideMenu"
         />
         <div :class="isSidemenuOpen && 'side-nav-open'" class="side-nav">
           <interface-side-menu />
@@ -351,6 +351,7 @@ export default {
     },
     toggleSideMenu() {
       this.$store.commit('TOGGLE_SIDEMENU');
+      console.log('11111111111111111111');
     },
     async fetchTokens() {
       this.receivedTokens = false;
